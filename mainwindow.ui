@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>995</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="VentanaInventario" name="ventanaInventario"/>
+      <widget class="VentanaContactos" name="ventanaContactos"/>
+      <widget class="VentanaPedidos" name="ventanaPedidos"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>995</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="menuToolbar">
+   <property name="iconSize">
+    <size>
+     <width>80</width>
+     <height>80</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionInventario"/>
+   <addaction name="actionContactos"/>
+   <addaction name="actionPedidos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionInventario">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imgs/recursos/almacen.svg</normaloff>:/imgs/recursos/almacen.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Inventario</string>
+   </property>
+   <property name="toolTip">
+    <string>Ingresar Inventario</string>
+   </property>
+  </action>
+  <action name="actionContactos">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imgs/recursos/tarjeta.svg</normaloff>:/imgs/recursos/tarjeta.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Contactos</string>
+   </property>
+   <property name="toolTip">
+    <string>Agenda Contactos</string>
+   </property>
+  </action>
+  <action name="actionPedidos">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imgs/recursos/carro-de-la-compra.svg</normaloff>:/imgs/recursos/carro-de-la-compra.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Pedidos</string>
+   </property>
+   <property name="toolTip">
+    <string>Compra Venta</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>VentanaInventario</class>
+   <extends>QWidget</extends>
+   <header>ventanainventario.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VentanaContactos</class>
+   <extends>QWidget</extends>
+   <header>ventanacontactos.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VentanaPedidos</class>
+   <extends>QWidget</extends>
+   <header>ventanapedidos.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

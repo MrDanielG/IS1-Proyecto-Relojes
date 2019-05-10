@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>recursos/bg.svg</file>
+        <file>recursos/almacen.svg</file>
+        <file>recursos/carro-de-la-compra.svg</file>
+        <file>recursos/tarjeta.svg</file>
+        <file>recursos/pedidosRealizados.svg</file>
+    </qresource>
+</RCC>
