@@ -6,7 +6,7 @@
 #include <QSqlRecord>
 #include <QMessageBox>
 #include <QSqlQuery>
-
+#include <QFile>
 VentanaPedidos::VentanaPedidos(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::VentanaPedidos)
@@ -170,6 +170,118 @@ void VentanaPedidos::on_btnGuardarPedido_clicked()
         QMessageBox msjGuardado;
         msjGuardado.setText("Pedido Guardado");
         msjGuardado.exec();
+
+        //Guardando Quertys en variables
+        QString idContactoFile,
+                nombreContactoFile,
+                apellidoContactoFile,
+                idPedidoFile,
+                fechaEntregaFile,
+                tipoPagoFile,
+                cantidadFile,
+                modeloFile,
+                marcaFile,
+                precioFile,
+                totalFile;
+
+        QSqlQuery queryFile(mDatabase);
+        queryFile.exec("SELECT id_contacto FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            idContactoFile = queryFile.value(0).toString();
+        }
+        qDebug()<<idContactoFile;
+
+        //Nombre Contacto
+        queryFile.exec("SELECT nombre FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            nombreContactoFile = queryFile.value(0).toString();
+        }
+        qDebug()<<nombreContactoFile;
+
+        //Apellido Contacto
+        queryFile.exec("SELECT paterno FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            apellidoContactoFile = queryFile.value(0).toString();
+        }
+        qDebug()<<apellidoContactoFile;
+
+        //ID Pedido
+        queryFile.exec("SELECT id_pedido FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            idPedidoFile = queryFile.value(0).toString();
+        }
+        qDebug()<<idPedidoFile;
+
+        //Fecha
+        queryFile.exec("SELECT fecha_entrega FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            fechaEntregaFile = queryFile.value(0).toString();
+        }
+        qDebug()<<fechaEntregaFile;
+
+        //Tipo Pago
+        queryFile.exec("SELECT tipo_pago FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            tipoPagoFile = queryFile.value(0).toString();
+        }
+        qDebug()<<tipoPagoFile;
+
+        //Cantidad
+        queryFile.exec("SELECT cantidad FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            cantidadFile = queryFile.value(0).toString();
+        }
+        qDebug()<<cantidadFile;
+
+        //Modelo
+        queryFile.exec("SELECT modelo FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            modeloFile = queryFile.value(0).toString();
+        }
+        qDebug()<<modeloFile;
+
+        //Marca
+        queryFile.exec("SELECT marca FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            marcaFile = queryFile.value(0).toString();
+        }
+        qDebug()<<marcaFile;
+
+        //Precio
+        queryFile.exec("SELECT precio FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            precioFile = queryFile.value(0).toString();
+        }
+        qDebug()<<precioFile;
+
+        //Total
+        queryFile.exec("SELECT Total FROM infoPedido WHERE id_contacto="+idContacto+"");
+        while (queryFile.next()) {
+            totalFile = queryFile.value(0).toString();
+        }
+        qDebug()<<totalFile;
+
+        //Haciendo Archivo de Texto de Pedidos
+        QFile file("C:/xampp/htdocs/GitHub/IS1-Proyecto-Relojes/reporte.txt");
+        if(!file.open(QFile::WriteOnly | QFile::Text)){
+            QMessageBox::warning(this, "Titulo", "Archivo no abierto");
+        }
+
+        QTextStream out(&file);
+        out<<"ID Reporte: "<<idPedidoFile<<endl;
+        out<<"Fecha de Pedido: "<<fechaEntregaFile<<endl;
+        out<<"Tipo de Pago: "<<tipoPagoFile<<endl;
+        out<<"ID de Contacto: "<<idContactoFile<<endl;
+        out<<"Nombre Contacto: "<<nombreContactoFile<<endl;
+        out<<"Apellido: "<<apellidoContactoFile<<endl;
+        out<<"Cantidad de Productos: "<<cantidadFile<<endl;
+        out<<"Marca Producto: "<<marcaFile<<endl;
+        out<<"Modelo Producto: "<<modeloFile<<endl;
+        out<<"Precio Producto: "<<precioFile<<endl;
+        out<<"TOTAL: "<<totalFile<<endl;
+
+        file.flush();
+        file.close();
     }
 }
 
