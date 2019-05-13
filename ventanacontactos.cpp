@@ -73,7 +73,7 @@ void VentanaContactos::on_btnActualiza_clicked()
 void VentanaContactos::on_btnBuscar_clicked()
 {
     QString busqueda;
-    busqueda = ui->leBusqueda->text();
+    //busqueda = ui->leBusqueda->text();
     qDebug() <<busqueda;
 
     tm->setFilter("name LIKE '%" + busqueda +"%'");

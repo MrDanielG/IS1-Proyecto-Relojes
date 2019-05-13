@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>995</width>
+    <width>1091</width>
     <height>541</height>
    </rect>
   </property>
@@ -20,6 +20,9 @@
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <widget class="VentanaInventario" name="ventanaInventario"/>
       <widget class="VentanaContactos" name="ventanaContactos"/>
       <widget class="VentanaPedidos" name="ventanaPedidos"/>
@@ -32,7 +35,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>995</width>
+     <width>1091</width>
      <height>26</height>
     </rect>
    </property>

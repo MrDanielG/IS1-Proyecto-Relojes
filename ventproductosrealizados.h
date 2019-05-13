@@ -19,6 +19,9 @@ public:
     explicit ventproductosRealizados(QWidget *parent = nullptr);
     ~ventproductosRealizados();
 
+private slots:
+    void on_btnRefresh_clicked();
+
 private:
     Ui::ventproductosRealizados *ui;
     QSqlTableModel *infoPedidosTM;

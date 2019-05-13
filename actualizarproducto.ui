@@ -31,6 +31,16 @@ QPushButton:hover{
 
 QLineEdit{
 	border-radius:14px;
+}
+
+QHeaderView::section {
+    background-color: #1869A9;
+	color: white;
+    padding: 4px;
+    font-size: 14pt;
+    border-style: none;
+    border-bottom: 1px solid #16618B;
+    border-right: 1px solid #fffff8;
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">

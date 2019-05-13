@@ -1,2 +1,11 @@
-ID Reporte: 21
-Fecha de Pedido: 2019-05-10Tipo de Pago: EfectivoID de Contacto: 1Nombre Contacto: DanielApellido: GarnicaCantidad de Productos: 1Marca Producto: ZelcoModelo Producto: Zn-02Precio Producto: 12TOTAL: 12
+ID Reporte: 24
+Fecha de Pedido: 2019-05-13
+Tipo de Pago: Tarjeta
+ID de Contacto: 26
+Nombre Contacto: Sergio
+Apellido: Fernandez
+Cantidad de Productos: 2
+Marca Producto: Casio
+Modelo Producto: CS-01
+Precio Producto: 250
+TOTAL: 500

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>865</width>
-    <height>495</height>
+    <width>1030</width>
+    <height>555</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,6 +31,16 @@ QPushButton:hover{
 
 QLineEdit{
 	border-radius:14px;
+}
+
+QHeaderView::section {
+    background-color: #1869A9;
+	color: white;
+    padding: 4px;
+    font-size: 14pt;
+    border-style: none;
+    border-bottom: 1px solid #16618B;
+    border-right: 1px solid #fffff8;
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">

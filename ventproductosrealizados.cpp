@@ -38,3 +38,7 @@ void ventproductosRealizados::configurar()
     ui->tablaInfoPedido->setModel(infoPedidosTM);
     infoPedidosTM->setEditStrategy(QSqlTableModel::OnManualSubmit);
 }
+
+void ventproductosRealizados::on_btnRefresh_clicked(){
+    infoPedidosTM->select();
+}
