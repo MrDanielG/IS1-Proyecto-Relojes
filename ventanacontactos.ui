@@ -51,6 +51,11 @@ QHeaderView::section {
 
 QLineEdit{
 	border-color: blue;
+}
+
+
+QDialog{
+	background:white;
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">

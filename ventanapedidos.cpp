@@ -268,7 +268,9 @@ void VentanaPedidos::on_btnGuardarPedido_clicked()
         }
 
         QTextStream out(&file);
+        out<<"--------------------------------"<<endl;
         out<<"ID Reporte: "<<idPedidoFile<<endl;
+        out<<"--------------------------------"<<endl;
         out<<"Fecha de Pedido: "<<fechaEntregaFile<<endl;
         out<<"Tipo de Pago: "<<tipoPagoFile<<endl;
         out<<"ID de Contacto: "<<idContactoFile<<endl;
@@ -278,7 +280,9 @@ void VentanaPedidos::on_btnGuardarPedido_clicked()
         out<<"Marca Producto: "<<marcaFile<<endl;
         out<<"Modelo Producto: "<<modeloFile<<endl;
         out<<"Precio Producto: "<<precioFile<<endl;
+        out<<"--------------------------------"<<endl;
         out<<"TOTAL: "<<totalFile<<endl;
+        out<<"--------------------------------"<<endl;
 
         file.flush();
         file.close();
