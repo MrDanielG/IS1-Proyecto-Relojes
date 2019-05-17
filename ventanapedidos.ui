@@ -120,6 +120,9 @@ color: white;</string>
        <height>40</height>
       </size>
      </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="text">
       <string>Guardar</string>
      </property>
@@ -132,6 +135,9 @@ color: white;</string>
        <width>0</width>
        <height>40</height>
       </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="text">
       <string>Mostrar Pedidos</string>
@@ -216,6 +222,9 @@ color: white;</string>
          <height>40</height>
         </size>
        </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>Agregar</string>
        </property>
@@ -234,6 +243,9 @@ color: white;</string>
          <width>50</width>
          <height>40</height>
         </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="text">
         <string>Agregar</string>
@@ -254,6 +266,9 @@ color: white;</string>
          <height>40</height>
         </size>
        </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>Agregar</string>
        </property>
@@ -272,6 +287,9 @@ color: white;</string>
          <width>50</width>
          <height>40</height>
         </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="text">
         <string>Agregar</string>

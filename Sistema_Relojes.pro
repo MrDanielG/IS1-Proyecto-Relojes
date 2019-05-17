@@ -29,6 +29,7 @@ SOURCES += \
         actualizarproducto.cpp \
         crearcontato.cpp \
         crearproducto.cpp \
+    login.cpp \
         main.cpp \
         mainwindow.cpp \
         ventanacontactos.cpp \
@@ -41,6 +42,7 @@ HEADERS += \
         actualizarproducto.h \
         crearcontato.h \
         crearproducto.h \
+    login.h \
         mainwindow.h \
         ventanacontactos.h \
         ventanainventario.h \
@@ -52,6 +54,7 @@ FORMS += \
         actualizarproducto.ui \
         crearcontato.ui \
         crearproducto.ui \
+    login.ui \
         mainwindow.ui \
         ventanacontactos.ui \
         ventanainventario.ui \
@@ -65,3 +68,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     resources.qrc
+
+DISTFILES += \
+    recursos/bg_login1.jpg

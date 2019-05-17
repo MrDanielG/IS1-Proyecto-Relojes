@@ -5,5 +5,7 @@
         <file>recursos/carro-de-la-compra.svg</file>
         <file>recursos/tarjeta.svg</file>
         <file>recursos/pedidosRealizados.svg</file>
+        <file>recursos/bg_login1.jpg</file>
+        <file>recursos/gnome-clocks.png</file>
     </qresource>
 </RCC>

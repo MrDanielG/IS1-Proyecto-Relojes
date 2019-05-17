@@ -41,6 +41,10 @@ QHeaderView::section {
     border-style: none;
     border-bottom: 1px solid #16618B;
     border-right: 1px solid #fffff8;
+}
+
+QDialog{
+	background:white;
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
