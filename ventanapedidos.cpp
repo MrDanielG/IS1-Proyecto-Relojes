@@ -20,7 +20,7 @@ VentanaPedidos::VentanaPedidos(QWidget *parent) :
     }
     else {
         QSqlQuery queryc(mDatabase);
-        queryc.exec("SELECT id_contacto FROM contacto");
+        queryc.exec("SELECT concat(id_contacto,'  -  ', nombre)  FROM contacto");
         while(queryc.next()){
             ui->boxContacto->addItem(queryc.value(0).toString());
         }
@@ -37,9 +37,6 @@ VentanaPedidos::VentanaPedidos(QWidget *parent) :
         }
         queryp.finish();
 
-        /*
-        QSqlQuery queryt(mDatabase);
-        queryt.exec("SELECT ")*/
     }
 
     ui->label_3->hide();

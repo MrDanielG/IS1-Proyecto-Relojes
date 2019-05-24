@@ -1,11 +1,15 @@
-ID Reporte: 24
-Fecha de Pedido: 2019-05-13
+--------------------------------
+ID Reporte: 25
+--------------------------------
+Fecha de Pedido: 2019-05-17
 Tipo de Pago: Tarjeta
 ID de Contacto: 26
 Nombre Contacto: Sergio
 Apellido: Fernandez
 Cantidad de Productos: 2
 Marca Producto: Casio
-Modelo Producto: CS-01
-Precio Producto: 250
-TOTAL: 500
+Modelo Producto: CS-04
+Precio Producto: 300
+--------------------------------
+TOTAL: 1100
+--------------------------------
