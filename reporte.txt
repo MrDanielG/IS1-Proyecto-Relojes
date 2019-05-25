@@ -1,15 +1,15 @@
 --------------------------------
-ID Reporte: 25
+ID Reporte: 31
 --------------------------------
-Fecha de Pedido: 2019-05-17
-Tipo de Pago: Tarjeta
-ID de Contacto: 26
-Nombre Contacto: Sergio
-Apellido: Fernandez
+Fecha de Pedido: 2019-05-24
+Tipo de Pago: Efectivo
+ID de Contacto: 28
+Nombre Contacto: Manganito
+Apellido: Perez
 Cantidad de Productos: 2
 Marca Producto: Casio
 Modelo Producto: CS-04
 Precio Producto: 300
 --------------------------------
-TOTAL: 1100
+TOTAL: 600
 --------------------------------

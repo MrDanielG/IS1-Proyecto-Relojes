@@ -20,7 +20,11 @@ VentanaPedidos::VentanaPedidos(QWidget *parent) :
     }
     else {
         QSqlQuery queryc(mDatabase);
-        queryc.exec("SELECT concat(id_contacto,'  -  ', nombre)  FROM contacto");
+        queryc.exec("SELECT id_contacto FROM contacto");
+
+        //Esto es para que muestre el id y el nombre, pero luego no podemos extraer el id para futuras operaciones, puesto que tambien jala el nombre
+
+        //queryc.exec("SELECT concat(id_contacto,'  -  ', nombre)  FROM contacto");
         while(queryc.next()){
             ui->boxContacto->addItem(queryc.value(0).toString());
         }
